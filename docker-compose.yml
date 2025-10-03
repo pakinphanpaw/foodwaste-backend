@@ -1,0 +1,15 @@
+
+services:
+  backend:
+    build: .
+    container_name: backend
+    ports:
+      - "5000:5000"
+
+  nginx:
+    build: ./deploy
+    container_name: nginx
+    ports:
+      - "80:80"       
+    depends_on:
+      - backend
