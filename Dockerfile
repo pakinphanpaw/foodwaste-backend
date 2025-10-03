@@ -1,4 +1,4 @@
-# backend/Dockerfile
+
 FROM node:18-alpine
 
 # กำหนด working directory
